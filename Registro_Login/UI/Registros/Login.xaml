@@ -1,0 +1,34 @@
+﻿<Window x:Class="Registro_Login.UI.Registros.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro_Login.UI.Registros"
+        mc:Ignorable="d"
+        Title="Login" Height="300" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Vertical" Margin="0,10">
+                <Label Content="User Name" HorizontalAlignment="Center"/>
+                <TextBox x:Name="usuarioTextBox" Height="25" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,10">
+                <Label Content="Password" HorizontalAlignment="Center"/>
+                <PasswordBox x:Name="passwordTextBox" Height="25" Width="200" PasswordChar="*"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,10">
+                <Button x:Name="IniciarSesionButton" Height="30" Width="90" Click="IniciarSesionButton_Click">
+                    <Label Content="Iniciar Sesion"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Margin="0,10">
+                <Button x:Name="RegistrarseButton" Height="30" Width="80" Click="RegistrarseButton_Click">
+                    <Label Content="Registrarse"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
